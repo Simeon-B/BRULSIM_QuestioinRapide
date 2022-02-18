@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gameActivity">
+
+    <!-- bouton menu rejouer -->
+    <Button
+        android:id="@+id/game_button_replayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/game_menu_button_with"
+        android:minHeight="@dimen/main_button_min_height"
+        android:text="@string/game_replay"
+        android:textSize="@dimen/game_bt_txt_size"
+        android:rotation="180"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintVertical_bias="0.5">
+    </Button>
+
+    <Button
+        android:id="@+id/game_button_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/game_menu_button_with"
+        android:minHeight="@dimen/main_button_min_height"
+        android:text="@string/game_menu"
+        android:textSize="@dimen/game_bt_txt_size"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintVertical_bias="0.5">
+    </Button>
+
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/game_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_title"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@id/game_button_menu"
+        app:layout_constraintLeft_toRightOf="@id/game_button_menu"/>
+
+    <TextView
+        android:id="@+id/game_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_title"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:rotation="180"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/game_button_replayer"
+        app:layout_constraintRight_toLeftOf="@id/game_button_replayer"/>
+
+    <!-- Champ de questions -->
+    <TextView
+        android:id="@+id/game_question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/title_size"
+        android:width="@dimen/game_question_with"
+        android:background="@color/colorquestions"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.8"/>
+
+    <TextView
+        android:id="@+id/game_question2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/title_size"
+        android:width="@dimen/game_question_with"
+        android:rotation="180"
+        android:background="@color/colorquestions"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.2"/>
+
+    <!-- bouton menu rejouer -->
+    <Button
+        android:id="@+id/game_button_joue1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/game_question_with"
+        android:minHeight="@dimen/main_button_min_height"
+        android:rotation="180"
+        android:text=""
+        android:textSize="@dimen/button_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        tools:ignore="SpeakableTextPresentCheck"></Button>
+
+    <Button
+        android:id="@+id/game_button_joue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/game_question_with"
+        android:minHeight="@dimen/main_button_min_height"
+        android:text=""
+        android:textSize="@dimen/button_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        tools:ignore="SpeakableTextPresentCheck"></Button>
+
+    <!-- Compteur de point -->
+    <TextView
+        android:id="@+id/game_score1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="120sp"
+        android:minWidth="100dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.475"/>
+
+    <TextView
+        android:id="@+id/game_score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="120sp"
+        android:rotation="180"
+        android:minWidth="100dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.525"/>
+
+    <!-- Les nom des joueurs -->
+    <TextView
+        android:id="@+id/game_name_player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_name"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.69"/>
+
+    <TextView
+        android:id="@+id/game_name_player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_name"
+        android:textSize="30sp"
+        android:rotation="180"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.31"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

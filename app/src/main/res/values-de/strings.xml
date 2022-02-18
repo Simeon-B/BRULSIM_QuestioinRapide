@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Syystème -->
+    <string name="app_name">speed_quiz</string>
+    <string name="app_title">Geschwindigkeits-Quiz</string>
+
+    <!-- Ecran principale -->
+    <string name="main_add_player">Spieler hinzufügen</string>
+    <string name="main_play">Spielen</string>
+    <string name="main_play_edit_label">Spieler hinzufügen</string>
+    <string name="main_add_player_OK">OK</string>
+    <string name="main_add_player_Cancel">Abrechen</string>
+
+    <!-- Ecran de jeu -->
+    <string name="game_title">Schnell-Quiz</string>
+    <string name="game_replay">Neues Spiel</string>
+    <string name="game_menu">Menü</string>
+    <string name="player_name">Spieler Name</string>
+</resources>

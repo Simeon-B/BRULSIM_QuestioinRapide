@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Syystème -->
+    <string name="app_name">speed_quiz</string>
+    <string name="app_title">Questioins rapides</string>
+
+    <!-- Ecran principale -->
+    <string name="main_add_player">Ajouter un joueur</string>
+    <string name="main_play">Jouer</string>
+    <string name="main_play_edit_label">Ajouter un joueur</string>
+    <string name="main_add_player_OK">OK</string>
+    <string name="main_add_player_Cancel">Annuler</string>
+
+    <!-- Ecran de jeu -->
+    <string name="game_title">Quiz rapide</string>
+    <string name="game_replay">Rejouer</string>
+    <string name="game_menu">Menu</string>
+    <string name="player_name">Nom du joueur</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <style name="Theme.SpeedQuiz" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Couleur principale des objets -->
+        <item name="colorPrimary">@color/purple_700</item>
+        <!-- Style boutons -->
+        <item name="buttonStyle">@style/MesBoutons</item>
+    </style>
+
+    <!-- Titres -->
+    <style name="MesTitres" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- couleur texte -->
+
+        <!-- couleur de fond -->
+
+    </style>
+
+    <!-- Boutons -->
+    <style name="MesBoutons" parent="Widget.Material3.Button">
+        <!-- couleur texte -->
+        <item name="color">@color/white</item>
+        <!-- couleur de fond -->
+        <item name="background">@color/purple_700</item>
+        <!-- bodure (épèsseur et couleur)-->
+
+        <!-- rayon du coin -->
+    </style>
+
+</resources>
